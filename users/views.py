@@ -18,7 +18,7 @@ from AuditTrail.models import AuditLog
 
 def index(request):
     
-    shop_details = ShopDetails.objects.get(id=1)
+    shop_details = ShopDetails.objects.first()
     signInForm = SignInForm()
     signUpForm = CustomUserCreationForm()
     page_name = "index"
